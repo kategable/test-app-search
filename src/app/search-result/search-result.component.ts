@@ -9,5 +9,7 @@ export class SearchResultComponent  {
 
   constructor() { }
   @Input() data: string[];
-
+  trackByFn(value): string {
+    return value;
+  }
 }
